@@ -134,4 +134,8 @@ int smithyCard(int player, int handPos, struct gameState *state);
 
 int stewardCard(int player, int handPos, int choice1, int choice2, int choice3, struct gameState *state);
 
+int greatHallCard(int player, int handPos, struct gameState *state);
+
+int villageCard(int player, int handPos, struct gameState *state);
+
 #endif
