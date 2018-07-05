@@ -132,4 +132,6 @@ int adventurerCard(int player, struct gameState *state);
 
 int smithyCard(int player, int handPos, struct gameState *state);
 
+int stewardCard(int player, int handPos, int choice1, int choice2, int choice3, struct gameState *state);
+
 #endif
