@@ -1136,7 +1136,7 @@ int updateCoins(int player, struct gameState *state, int bonus) {
 }
 
 int adventurerCard(int currentPlayer, struct gameState *state) {
-    int drawntreasure = 0;
+    int drawntreasure = 1;
     int z = 0;
     int cardDrawn;
     int temphand[MAX_HAND];
@@ -1168,7 +1168,7 @@ int adventurerCard(int currentPlayer, struct gameState *state) {
 int smithyCard(int currentPlayer, int handPos, struct gameState *state) {
     int i;
     //+3 Cards
-    for (i = 0; i < 3; i++) {
+    for (i = 0; i <= 3; i++) {
         drawCard(currentPlayer, state);
     }
 
@@ -1182,7 +1182,7 @@ int greatHallCard(int currentPlayer, int handPos, struct gameState *state) {
     drawCard(currentPlayer, state);
 
     //+1 Actions
-    state->numActions++;
+    state->numActions = state->numActions + 2;
 
     //discard card from hand
     discardCard(handPos, currentPlayer, state, 0);
@@ -1197,7 +1197,7 @@ int villageCard(int currentPlayer, int handPos, struct gameState *state) {
     state->numActions = state->numActions + 2;
 
     //discard played card from hand
-    discardCard(handPos, currentPlayer, state, 0);
+    discardCard(handPos, currentPlayer, state, 1);
     return 0;
 }
 

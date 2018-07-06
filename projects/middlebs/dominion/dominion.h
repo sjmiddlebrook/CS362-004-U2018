@@ -129,13 +129,18 @@ int getWinners(int players[MAX_PLAYERS], struct gameState *state);
    1, others to 0 */
 
 int adventurerCard(int player, struct gameState *state);
+/* Implementation of the adventurer card when played */
 
 int smithyCard(int player, int handPos, struct gameState *state);
+/* Implementation of the smithy card when played */
 
 int stewardCard(int player, int handPos, int choice1, int choice2, int choice3, struct gameState *state);
+/* Implementation of the steward card when played */
 
 int greatHallCard(int player, int handPos, struct gameState *state);
+/* Implementation of the great hall card when played */
 
 int villageCard(int player, int handPos, struct gameState *state);
+/* Implementation of the village card when played */
 
 #endif
