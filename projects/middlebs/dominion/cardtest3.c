@@ -14,7 +14,7 @@ void assertTrue(int a, int b) {
 }
 
 
-void testAdventurerCard() {
+void testVillageCard() {
     printf("TESTING Village Card\n");
     int kingdomCards[10] = {council_room, mine, remodel, smithy, village, adventurer, sea_hag, minion, cutpurse, gardens};
     struct gameState currentGameState, beginningGameState;
@@ -58,7 +58,7 @@ void testAdventurerCard() {
 }
 
 int main(int argc, char *argv[]) {
-    testAdventurerCard();
+    testVillageCard();
     return 0;
 }
 
