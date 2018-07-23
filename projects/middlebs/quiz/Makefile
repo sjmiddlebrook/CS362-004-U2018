@@ -4,6 +4,7 @@ testme: testme.c
 	gcc  -o testme testme.c $(CFLAGS)
 
 all: testme
+	./testme
 
 clean:
 	rm -f *.o *.gcov *.gcda *.gcno *.so *.out testme
