@@ -1,4 +1,3 @@
 .idea/
 projects/middlebs/dominion/cmake-build-debug/
-projects/middlebs/dominion/playdom.dSYM/
-projects/middlebs/dominion/player.dSYM/
+projects/middlebs/dominion/*.dSYM/

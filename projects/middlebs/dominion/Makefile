@@ -50,7 +50,7 @@ runrandomtestcard2: randomtestcard2
 
 runrandomtestadventurer: randomtestadventurer
 	./randomtestadventurer &> randomtestadventurer.out
-	gcov dominion.c >> randomtestadventurer.out
+	gcov -fb dominion.c >> randomtestadventurer.out
 	cat dominion.c.gcov >> randomtestadventurer.out
 
 player: player.c interface.o
@@ -59,4 +59,4 @@ player: player.c interface.o
 all: playdom player 
 
 clean:
-	rm -f *.o playdom.exe playdom player player.exe  *.gcov *.gcda *.gcno *.so *.out testDrawCard testDrawCard.exe
+	rm -f *.o playdom.exe playdom player player.exe  *.gcov *.gcda *.gcno *.so *.out testDrawCard testDrawCard.exe randomtestadventurer randomtestcard1 randomtestcard2
