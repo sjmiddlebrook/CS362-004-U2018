@@ -645,7 +645,7 @@ int getCost(int cardNumber)
 
 int playAdventurer(int currentPlayer, struct gameState *state) 
 {
-    int drawntreasure = 1;
+    int drawntreasure = 0;
     int temphand[MAX_HAND];// moved above the if statement
     int cardDrawn;
     int z = 0;
@@ -833,8 +833,6 @@ int playSmithy(int currentPlayer, struct gameState *state, int handPos)
     }
 
     //discard card from hand
-    discardCard(handPos, currentPlayer, state, 0);
-    drawCard(currentPlayer, state);
     discardCard(handPos, currentPlayer, state, 0);
     return 0;
 }
